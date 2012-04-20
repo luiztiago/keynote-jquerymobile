@@ -1,0 +1,163 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Pernambuco.JS</title> 
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script>
+		$.mobile.page.prototype.options.backBtnText = "voltar";
+	</script>
+</head> 
+<body> 
+
+	<div data-role="page" id="main">
+
+		<div data-role="header">
+			<h1>Pernambuco.JS</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#evento">O evento</a></li>
+				<li><a href="#patrocinadores">Patrocinadores</a></li>
+				<li><a href="#agenda">Agenda</a></li>
+				<li><a href="http://maps.google.com/maps?q=Park+Hotel+-+Rua+dos+Navegantes,+9,+Recife+-+Pernambuco,+Brazil&hl=en&ll=-8.131661,-34.900174&spn=0.00615,0.009645&sll=-8.129489,-34.899606&sspn=0.196786,0.308647&oq=Park+Hotel+-+Rua+dos+Navegantes,+9+Recife+-+Pernambuco,+Brazil&hq=Park+Hotel+-+Rua+dos+Navegantes,+9,+Recife+-+Pernambuco,+Brazil&t=m&z=17">Local do Evento</a></li>
+			</ul>
+		</div><!-- /content -->
+
+		<div data-role="footer">
+			<h4>21 de Abril de 2012</h4>
+		</div> 
+
+	</div><!-- /page -->
+
+	<div data-role="page" id="evento" data-add-back-btn="true" data-back-btn-text="voltar">
+
+		<div data-role="header">
+			<h1>O Evento</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">
+			<p>Esta será a 1ª edição do <strong>Pernambuco.JS</strong>, evento do <a href="http://www.facebook.com/groups/pernambucojs/">grupo de desenvolvedores <strong>Javascript</strong> de Pernambuco</a>, que tem como objetivo, reunir a comunidade do estado e trazer a experiência de grandes profissionais do cenário local e nacional, abordando vários temas do atual estado da arte do desenvolvimento com Javascript na web.</p>
+		</div><!-- /content -->
+
+	</div><!-- /page -->
+
+	<div data-role="page" id="patrocinadores" data-add-back-btn="true" data-back-btn-text="voltar">
+
+		<div data-role="header">
+			<h1>Patrocinadores</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">
+			<ul data-role="listview">
+
+				<li data-role="list-divider">Prata</li>
+				<li><a href="http://www.liferay.com.br">Liferay</a></li>
+				<li><a href="http://www.globo.com">Globo.com</a></li>
+
+				<li data-role="list-divider">Bronze</li>
+				<li><a href="http://curso.eia.com.br/javascript.php">Cursos EIA</a></li>
+				<li><a href="http://www.mv.com">MV Sistemas</a></li>
+				<li><a href="http://www.terra.com.br">Terra</a></li>
+				<li><a href="http://www.servhost.com.br">Servhost</a></li>
+
+				<li data-role="list-divider">Apoio</li>
+				<li><a href="http://www.mauriciodenassau.edu.br/">Maurício de Nassau</a></li>
+				<li><a href="http://www.mgrtech.com">MGR Tecnologia</a></li>
+				<li><a href="http://www.pianolab.com.br">Pianolab</a></li>
+
+			</ul>
+		</div><!-- /content -->
+
+	</div><!-- /page -->
+
+	<div data-role="page" id="agenda" data-add-back-btn="true" data-back-btn-text="voltar">
+
+		<div data-role="header">
+			<h1>Agenda</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">
+
+			<ul data-divider-theme="d" data-theme="d" data-role="listview" class="ui-listview">
+				<li class="ui-li">
+					<h3 class="ui-li-heading">08h Credenciamento</h3>
+				</li>
+
+				<li class="ui-li">
+					<h3 class="ui-li-heading">09h Canvas, SVG e WebGL</h3>
+					<p class="ui-li-desc"><strong>Zeno Rocha, Globoesporte.com / RJ</strong></p>
+					<p class="ui-li-desc">Um dos criadores do jQuery Boilerplate e do Wormz do Chrome Experiments. Já foi desenvolvedor de software na Petrobras e hoje trabalha no Globoesporte.com. Tem 21 anos e é estudante de Sistemas de Informação na Universidade Federal do Estado do Rio de Janeiro - UNIRIO.</p>
+				</li>
+
+				<li class="ui-li">
+					<h3 class="ui-li-heading">09:45h Aplicações Mobile com Javascript</h3>
+					<p class="ui-li-desc"><strong>Luiz Tiago, MGR Tecnologia / PE</strong></p>
+					<p class="ui-li-desc">Pós-graduado em Desenvolvimento de Aplicações Móveis no CESAR e Graduado em Sistemas para Internet na Faculdade Marista, atua na área de web desde 2001. Vencedor do prêmio Peixe Grande de 2007, promovido pela Arteccom. Co-fundador do jQueryBrasil e PernambucoJS. Atualmente é Gerente de Frontend da MGR Tecnologia.</p>
+				</li>
+
+				<li class="ui-li">
+					<h3 class="ui-li-heading">10:30h ActiveRecord com Node.JS</h3>
+					<p class="ui-li-desc"><strong>Jean Nascimento, Gonow / SP</strong></p>
+					<p class="ui-li-desc">Desenvolvedor Web há 7 anos. Evangelista de NOSQL e Node.js. Formado pela UTFPR, com especialização em Desenvolvimento Web. Criador dos NosqlBR.com.br e JavascriptBrasil.com, co-criador dos FrontendBrasil.com.br e jQueryBrasil.org e Organizador do Sampa.js. Atualmente trabalha como Programador PHP Sênior pela GoNow.</p>
+				</li>
+
+				<li class="ui-li">
+					<h3 class="ui-li-heading">11:15h Extreme Web Performance</h3>
+					<p class="ui-li-desc"><strong>Jaydson Gomes, Terra / RS</strong></p>
+					<p class="ui-li-desc">Entusiasta JavaScript, Analista de Desenvolvimento Sênior no Terra Networks, possui 8 anos de experiência em desenvolvimento Web, curador do BrazilJS e do RSJS.</p>
+				</li>
+
+				<li class="ui-li">
+					<h3 class="ui-li-heading">12h Intervalo para almoço</h3>
+				</li>
+
+				<li class="ui-li">
+					<h3 class="ui-li-heading">13h Lightning Talks</h3>
+					<p class="ui-li-desc"><strong>Tiago Perrelli, Naips / PE</strong></p>
+					<p class="ui-li-desc"><strong>Djalma Araujo, Pianolab / PE</strong></p>
+					<p class="ui-li-desc"><strong>Dennis Calazans, i2 Mobile / PE</strong></p>
+					<p class="ui-li-desc"><strong>Bruno Souza, Ogilvy / PE</strong></p>
+				</li>
+
+				<li class="ui-li">
+					<h3 class="ui-li-heading">14h Javascript Cross-browser</h3>
+					<p class="ui-li-desc"><strong>Davidson Fellipe, Globo.com / RJ</strong></p>
+					<p class="ui-li-desc">Graduado em engenharia da computação pela UPE e técnico em eletrônica pelo IFPE. Fundador e moderador dos grupos riojs e pernambucojs. Atualmente é Desenvolvedor Frontend na Globo.com e Mestrando em Informática na PUC-Rio.</p>
+				</li>
+
+				<li class="ui-li">
+					<h3 class="ui-li-heading">14:45h Responsive design sem mitos</h3>
+					<p class="ui-li-desc"><strong>Bernardo Heynemann, Globo.com / RJ</strong></p>
+					<p class="ui-li-desc">Atual líder técnico da home da Globo.com. Possui mais de 15 anos de experiência em desenvolvimento de software. Criador dos projetos Pyccuracy, Skink, Ion, Thumbor e pyVows. Responsável direto pela implementação de responsive design nos portais etc.globo.com e www.globo.com</p>
+				</li>
+
+				<li class="ui-li">
+					<h3 class="ui-li-heading">15:30h Coffee-break</h3>
+				</li>
+
+				<li class="ui-li">
+					<h3 class="ui-li-heading">16h Aplicações de grande porte com YUI3 e AlloyUI</h3>
+					<p class="ui-li-desc"><strong>Eduardo Lundgren, Liferay / EUA</strong></p>
+					<p class="ui-li-desc">Um dos criadores do AlloyUI, sempre se envolve em projetos open source, ex-contribuidor do jQuery e jQuery UI. Graduado em Engenharia de Telecomunicações pela UPE e Mestrando em Ciência da Computação na UFPE. Atualmente é líder de desenvolvimento na Liferay.</p>
+				</li>
+
+				<li class="ui-li">
+					<h3 class="ui-li-heading">16:45h Mesa redonda</h3>
+				</li>
+
+				<li class="ui-li">
+					<h3 class="ui-li-heading">17:45h Sorteios</h3>
+				</li>
+				
+			</ul>
+		</div><!-- /content -->
+
+	</div><!-- /page -->
+
+</body>
+</html>

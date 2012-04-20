@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Pernambuco.JS</title> 
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script>
+		$.mobile.page.prototype.options.backBtnText = "voltar";
+	</script>
+</head> 
+<body> 
+
+	<div data-role="page" id="main">
+
+		<div data-role="header">
+			<h1>Pernambuco.JS</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#evento">O evento</a></li>
+				<li><a href="#patrocinadores">Patrocinadores</a></li>
+				<li><a href="#agenda">Agenda</a></li>
+				<li><a href="#local">Local do Evento</a></li>
+			</ul>
+		</div><!-- /content -->
+
+		<div data-role="footer">
+			<h4>21 de Abril de 2012</h4>
+		</div> 
+
+	</div><!-- /page -->
+
+	<div data-role="page" id="evento" data-add-back-btn="true" data-back-btn-text="voltar">
+
+		<div data-role="header">
+			<h1>O Evento</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">
+			<p>Esta será a 1ª edição do <strong>Pernambuco.JS</strong>, evento do <a href="http://www.facebook.com/groups/pernambucojs/">grupo de desenvolvedores <strong>Javascript</strong> de Pernambuco</a>, que tem como objetivo, reunir a comunidade do estado e trazer a experiência de grandes profissionais do cenário local e nacional, abordando vários temas do atual estado da arte do desenvolvimento com Javascript na web.</p>
+		</div><!-- /content -->
+
+	</div><!-- /page -->
+
+	<div data-role="page" id="patrocinadores" data-add-back-btn="true" data-back-btn-text="voltar">
+
+		<div data-role="header">
+			<h1>Patrocinadores</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">
+			<p>Patrocinadores</p>
+		</div><!-- /content -->
+
+	</div><!-- /page -->
+
+	<div data-role="page" id="agenda" data-add-back-btn="true" data-back-btn-text="voltar">
+
+		<div data-role="header">
+			<h1>Agenda</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">
+			<p>Agenda</p>
+		</div><!-- /content -->
+
+	</div><!-- /page -->
+
+	<div data-role="page" id="local" data-add-back-btn="true" data-back-btn-text="voltar">
+
+		<div data-role="header">
+			<h1>Local do Evento</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">
+			<p>Local do Evento</p>
+		</div><!-- /content -->
+
+	</div><!-- /page -->
+
+</body>
+</html>
